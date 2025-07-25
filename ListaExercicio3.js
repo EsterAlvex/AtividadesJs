@@ -49,12 +49,14 @@ while (contador >= 1){
 // **Exercício 6:**
 // Declare um array com 5 notas de um aluno. Use um laço de repetição (`for` ou `for...of`) para calcular a soma de todas as notas e, em seguida, calcule e exiba a média delas.
 
-let notas = [10, 8, 9, 7, ]
 
-for (let nota of notas){
- let calcular 
+let notas = [10, 9 , 5 , 7, 4]
+let soma = 0
+for (let i = 0; i < notas.length; i++ ){
+    soma = soma + notas[i]
 }
-    
+let media = soma / notas.length
+console.log(`A soma das notas é: ${soma} e a média das notas é: ${media}`);
 
 // **Exercício 7:**
 // Crie uma função chamada `verificarParidade` que recebe um número como parâmetro. A função deve retornar uma string: "Par" se o número for par, ou "Ímpar" se for ímpar. Chame a função com diferentes números e exiba o resultado no console.
@@ -74,3 +76,14 @@ console.log(verificarParidade(8));
 // **Exercício 8:**
 // Crie uma função chamada `calcularFatorial` que recebe um número inteiro não negativo como parâmetro e retorna o seu fatorial. O fatorial de um número `n` (representado por `n!`) é a multiplicação de todos os inteiros de 1 a `n`. Ex: `5! = 5 * 4 * 3 * 2 * 1 = 120`. Lembre-se que o fatorial de 0 é 1.
 
+function calcularFatorial (n){
+    let resultado = 1
+
+    for (let i = n; i > 1; i--){
+        resultado = resultado * i;
+    }
+
+    return resultado
+}
+
+console.log(calcularFatorial(5));
