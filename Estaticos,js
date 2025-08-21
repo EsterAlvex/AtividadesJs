@@ -1,0 +1,24 @@
+class Matematica {
+
+    static PI = 3.14159
+
+    static calcularAreaCirculo(raio){
+        return Matematica.PI * raio * raio
+    }
+
+}
+
+console.log(Matematica.PI);
+
+class Utilitarios {
+    static gerarIdAleatorio() {
+        return Math.floor(Math.random() * 1000);
+    }
+    
+    static formatarData(data) {
+        return data.toLocaleDateString('pt-BR');
+    }
+}
+
+const id = Utilitarios.gerarIdAleatorio();
+console.log(id); // Número aleatório entre 0 e 999 
